@@ -64,7 +64,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[InlineKeyboardButton("Я подписался ✅", callback_data="check_sub")]]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text(
-        f"👋 Привет! Чтобы получить доступ к актуальному боту, "
+        f"👋 Привет! Чтобы получить доступ к актуальному боту, и получить 5 запросов "
         f"подпишись на канал:\n{CHANNEL_LINK}\n\n"
         f"Отправь заявку на вступление и нажми кнопку «Я подписался».",
         reply_markup=reply_markup,
